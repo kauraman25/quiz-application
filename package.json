@@ -1,10 +1,13 @@
 {
   "name": "quizapplication",
+  "homepage": "https://kauraman25.github.io/quiz-application/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build", 
+    "deploy": "gh-pages -d build", 
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -18,6 +21,7 @@
     "@mui/styled-engine-sc": "^6.0.0-alpha.18",
     "axios": "^1.7.3",
     "bootstrap": "^5.3.3",
+    "gh-pages": "^6.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.0",
