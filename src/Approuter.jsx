@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {HashRouter as BrowserRouter, Route, Routes } from "react-router-dom";
 import MainPage from "./MainPage";
 import LogIn from "./component/LogIn";
 import { createContext, useState } from "react";
@@ -28,7 +28,7 @@ const Approuter = () => {
   return (
     <>
       <Authentication.Provider value={{ loggedin, username, login, logout }}>
-        <BrowserRouter>
+        <BrowserRouter basename="/quiz-application">
           <Routes>
             <Route path="/" element={<MainPage />} />
             <Route path="/login" element={<LogIn />} />
