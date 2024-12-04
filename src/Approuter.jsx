@@ -28,7 +28,7 @@ const Approuter = () => {
   return (
     <>
       <Authentication.Provider value={{ loggedin, username, login, logout }}>
-        <BrowserRouter basename="/quiz-application">
+        <BrowserRouter >
           <Routes>
             <Route path="/" element={<MainPage />} />
             <Route path="/login" element={<LogIn />} />
